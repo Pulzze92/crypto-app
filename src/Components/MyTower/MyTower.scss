@@ -1,0 +1,64 @@
+.my-tower-main {
+  color: white;
+  h1 {
+    font-family: 'Press Start 2P', 'VT323';
+    font-size: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .floor-field {
+    width: 450px;
+    height: 450px;
+    border: 3px solid black;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    background-color: rgba($color: white, $alpha: 0.7);
+
+    @media (max-width: 730px) {
+      width: 310px;
+      height: 370px;
+    }
+    @media (max-width: 350px) {
+      width: 303px;
+      height: 370px;
+    }
+  }
+}
+
+.my-tower {
+  display: grid;
+  height: 20vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  font-family: 'Press Start 2P', 'VT323';
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr 1% 1fr;
+  // margin-bottom: calc(1vw + 0.1%);
+
+  @media (max-width: 730px) {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1%;
+    margin-left: calc(100vw - 90%);
+    margin-right: calc(100vw - 90%);
+    margin-bottom: calc(15vw + 2%);
+    margin-bottom: 95px;
+  }
+  @media (max-width: 370px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1%;
+    margin-left: calc(100vw - 90%);
+    margin-right: calc(100vw - 90%);
+    margin-bottom: calc(15vw + 15%);
+  }
+  @media (max-width: 300px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr 0.1%;
+    margin-left: calc(100vw - 90%);
+    margin-right: calc(100vw - 90%);
+    margin-bottom: calc(15vw + 10%);
+  }
+  @media (max-width: 252px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
