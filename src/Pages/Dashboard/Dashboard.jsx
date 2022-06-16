@@ -4,7 +4,7 @@ import styles from './Dashboard.scss';
 
 const Dashboard = () => {
   return (
-    <div className="dashboard">
+    <div className="dashboard-field">
       <div className="dashboard-wrapper">
         <img src={profileImg} className="profileImg"></img>
         <div className="profile-id">ID 2277</div>
@@ -25,6 +25,36 @@ const Dashboard = () => {
             <div className="tower-stat-title">MISSED PAYOUTS</div>
             <div className="tower-stat-profit misP">0 BNB</div>
           </div>
+        </div>
+        <div className="ref-link">
+          <div className="ref-link-title">MY PERSONAL LINK</div>
+          <div className="link">https://build-tower.game/2277</div>
+          <button>Copy</button>
+        </div>
+        <h2>Tower activities</h2>
+        <div className="tower-activity">
+          <h3>Build 5 floor</h3>
+          <h4>about 1 month ago</h4>
+        </div>
+        <div className="tower-activity">
+          <h3>Build 4 floor</h3>
+          <h4>about 1 month ago</h4>
+        </div>
+        <div className="tower-activity">
+          <h3>Build 3 floor</h3>
+          <h4>about 1 month ago</h4>
+        </div>
+        <div className="tower-activity">
+          <h3>Build 2 floor</h3>
+          <h4>about 1 month ago</h4>
+        </div>
+        <div className="tower-activity">
+          <h3>Got 0.037 BNB rent payment for 1 floor. From ID 3484</h3>
+          <h4>about 1 month ago</h4>
+        </div>
+        <div className="tower-activity">
+          <h3>Build 1 floor</h3>
+          <h4>about 1 month ago</h4>
         </div>
       </div>
     </div>
