@@ -10,10 +10,10 @@ import Dashboard from './Pages/Dashboard/Dashboard';
 import Promo from './Pages/Promo/Promo';
 import Statistics from './Pages/Statistics/Statistics';
 import Bonus from './Pages/Bonus/Bonus';
+import Search from './Components/Search/Search';
 
 function App() {
   const [account, setAccount] = React.useState();
-  const [menuClicked, setMenuClicked] = React.useState(false);
 
   return (
     <>
@@ -26,7 +26,6 @@ function App() {
           <Route path="/statistics" element={<Statistics />} />
           <Route path="/bonus" element={<Bonus />} />
         </Routes>
-        {/* {menuClicked ? <Menu setMenuClicked={(m) => setMenuClicked(m)} /> : <MyTower />} */}
       </div>
     </>
   );
