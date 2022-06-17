@@ -5,7 +5,7 @@ import Menu from '../../Pages/Menu';
 import Search from '../Search/Search';
 
 export const Header = () => {
-  const [searchActive, setSearchActive] = React.useState(true);
+  const [searchActive, setSearchActive] = React.useState(false);
 
   return (
     <div className="header">
