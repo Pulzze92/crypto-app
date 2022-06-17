@@ -16,7 +16,7 @@ const Menu = ({ menuClicked, setMenuClicked }) => {
         <Link to="/dashboard">
           <div className="dashboard">Dashboard</div>
         </Link>
-        <Link to="/">
+        <Link to="/crypto-app/">
           <div className="tower-link">My tower</div>
         </Link>
         <Link to="/bonus">
